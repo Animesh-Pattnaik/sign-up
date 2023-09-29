@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  background: no-repeat center fixed;
+  background-image: url(C:\Users\JBP\Desktop\Web Dev\React\signup\bg1.png);
+  background-size: cover;
+}
+
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .container > form{
+    position: relative;
+    padding: 20px;
+    width: 70%;
+    background-color: hsla(0, 0%, 100%, .01);
+    border: 2px solid hsla(0, 0%, 100%, .7);
+    border-radius: 1rem;
+    backdrop-filter: blur(16px);
+  }
+
+  pre {
+    width: 70%;
+    font-size: larger;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .ui.form .field>label {
+    color: rgb(255, 255, 255);
+  }
+
+  .ui.form input[type=text],
+  .ui.form input[type=text]:focus{
+    background: none;
+    color: hsl(0, 0%, 100%);
+    border: 2px solid hsla(0, 0%, 100%, .7);
+  }
+
+  .ui.form input[type=password],
+  .ui.form input[type=password]:focus{
+    background: none;
+    color: hsl(0, 0%, 100%);
+    border: 2px solid hsla(0, 0%, 100%, .7);
+  }
+
+  p {
+    color: rgb(7, 131, 158);
+  }
+
+.login__check, 
+.login__check-box {
+  display: flex;
+  justify-content: start;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.button{
+    width: 100%;
+}
+
+.login__register {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login__register p {
+  color: hsl(0, 0%, 100%);;
+  font-weight: 500;
+}
+
+.login__register a {
+  color: hsl(0, 0%, 100%);;
+  font-weight: 500;
+}
+
+.login__register a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    width: 100%;
+  }
+
+  .container > form{
+    width: 90%;
+  }
+}
